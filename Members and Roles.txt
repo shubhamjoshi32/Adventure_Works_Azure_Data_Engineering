@@ -1,0 +1,12 @@
+Azure Resource group, Microsoft Entra ID Handling Roles and Permission handling : Kaustubh.
+Bronze Layer Dynamic loading from GitRaw : Vaishnav amd Shubham.
+Silver Layer DataBricks Transformation : Mandar. 
+Gold layer Azure Synapse : Shivam.
+Visualizations Power Bi : Pooja.
+
+
+Kaustubh
+Vaishnav
+Shubham
+Mandar
+Shivam
