@@ -70,7 +70,7 @@ Pipeline Dynamics: Built parameterized pipelines inside Azure Data Factory utili
 
 Ingestion Vector: Extracted multiple source datasets from the target repository via HTTP API connections, landing files safely into the bronze filesystem container as un-mutated raw CSVs.
 
-![System Architecture Diagram](Screenshots\Data_Pipeline.png)
+![System Architecture Diagram](Screenshots/Data_Pipeline.png)
 
 ### 🥈 2. Data Cleaning & Optimization (Silver Layer)
 
@@ -96,7 +96,7 @@ Decoupled Schema Structures: Built clean external metadata abstractions utilizin
 
 Established explicit direct-line connection strings between Synapse SQL relational endpoints and Power BI Desktop to build reporting charts, ensuring live metrics mirror raw transactional records accurately.
 
-![Adventure Works Power BI Dashboard](Screenshots/Data_bricks_visualization_2.png)
+![Adventure Works Power BI Dashboard](Screenshots/Power_Bi_Dashboard.png)
 
 
 ### 🛡️ Security & Enterprise Integration
