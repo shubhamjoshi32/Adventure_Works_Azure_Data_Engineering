@@ -32,7 +32,13 @@ This repository contains a comprehensive, production-grade enterprise data engin
         ▼ (Serverless SQL Pool Queries)
 [ Azure Synapse Analytics ] ───▶ [ Power BI Dashboards ]
 
-```
+``` 
+
+### 🏗️ 1. System Architecture Diagram
+
+The end-to-end cloud infrastructure map detailing data movement through the Medallion layers via Azure Data Factory, Databricks, and Synapse Analytics.
+
+![System Architecture Diagram](Screenshots/Architecture.png)
 
 ### 🎯 Problem Statement
 
@@ -64,6 +70,8 @@ Pipeline Dynamics: Built parameterized pipelines inside Azure Data Factory utili
 
 Ingestion Vector: Extracted multiple source datasets from the target repository via HTTP API connections, landing files safely into the bronze filesystem container as un-mutated raw CSVs.
 
+![System Architecture Diagram](Screenshots\Data_Pipeline.png)
+
 ### 🥈 2. Data Cleaning & Optimization (Silver Layer)
 
 Compute Layer: Attached decoupled Azure Databricks Spark clusters via secure enterprise configurations targeting the global Azure endpoint storage mapping (.windows.net).
@@ -88,6 +96,9 @@ Decoupled Schema Structures: Built clean external metadata abstractions utilizin
 
 Established explicit direct-line connection strings between Synapse SQL relational endpoints and Power BI Desktop to build reporting charts, ensuring live metrics mirror raw transactional records accurately.
 
+![Adventure Works Power BI Dashboard](Screenshots/Data_bricks_visualization_2.png)
+
+
 ### 🛡️ Security & Enterprise Integration
 
 Secure Authentication: Managed cross-resource access using secure Entra ID (Azure AD) Service Principals and native Managed Identities rather than utilizing vulnerable hardcoded account keys.
@@ -105,4 +116,3 @@ Optimized Performance Realized: Migrating flat files down to structured Parquet 
 ### 📝 Conclusion
 
 This project provides a robust, production-ready blueprint bridging the gap between raw web-hosted sources and operational dashboards. By adopting a decoupled Medallion Architecture and orchestrating unified services inside Microsoft Azure, this implementation delivers an agile data solution engineered to handle fluctuating enterprise workloads securely and efficiently.
-
